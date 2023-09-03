@@ -5,16 +5,19 @@ import {
   AiOutlineUserAdd,
   AiOutlineUserDelete,
 } from 'react-icons/ai';
+import { Search } from './Search';
 
 export function Header() {
   return (
-    <div className=' flex p-8 justify-between items-center'>
+    <div className='flex py-8 px-12 justify-between items-center'>
       <Link to='/'>
-        <h1 className=' text-yellow-500 hover:text-yellow-400 text-2xl font-Newsreader font-semibold'>
+        <h1 className=' text-indigo-500 hover:text-indigo-600 hover:border-b-2 hover:border-indigo-600 text-2xl font-Newsreader font-semibold'>
           GlobeGazette
         </h1>
       </Link>
-      <h1>search</h1>
+      <div className='w-1/3 min-w-[268px]'>
+        <Search />
+      </div>
       <div className='flex gap-10'>
         <Link
           to='/login'
